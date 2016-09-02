@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content container">
+        <div class="row">
+            <div class="blog_title col-6">
+                <h4>
+                    {{ post.subject }}
+                </h4>
+            </div>
+            <div class="blog_date col-6">
+                <h5>
+                    {{ post.created }}
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="blog_body col-6">
+                <pre>{{ post.content }}</pre>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+{% endblock %}
